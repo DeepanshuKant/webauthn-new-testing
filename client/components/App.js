@@ -114,13 +114,13 @@ function App() {
         });
   }, [loggedIn]);
 
-  useEffect(() => {
-    isPlatformWebAuthnSupport().then((result) => {
-      setisPlatformSupported(result);
-    });
+  // useEffect(() => {
+  //   isPlatformWebAuthnSupport().then((result) => {
+  //     setisPlatformSupported(result);
+  //   });
 
-    return () => { };
-  }, []);
+  //   return () => { };
+  // }, []);
 
   return (
     <div className="App-header">
