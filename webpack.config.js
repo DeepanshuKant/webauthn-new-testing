@@ -7,7 +7,7 @@ const serverPort = process.env.PORT || 8080;
 module.exports = {
 	entry: ['babel-polyfill', './client/index.js'],
 	output: {
-		path: path.join(__dirname, 'dist'),
+		path: path.join(__dirname, 'public'),
 		filename: 'bundle.js',
 	},
 	module: {
@@ -36,7 +36,7 @@ module.exports = {
 		port: 3000,
 		open: true,
 		proxy: {
-			'/webauthn': 'http://localhost:'+serverPort,
+			'/webauthn': 'http://localhost:' + serverPort,
 		},
 	},
 	plugins: [
