@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // const dbConnection = process.env.DB_CONNECTION;
 mongoose.set('useCreateIndex', true);
 
-mongoose.connect("mongodb://localhost:27017/", {
+mongoose.connect("mongodb+srv://CheeseMaster_69:<password>@cluster0.5crnt.mongodb.net/?retryWrites=true&w=majority", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 });
